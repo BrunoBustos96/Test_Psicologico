@@ -1,0 +1,14 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="QuitarSombra" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#E8E8E8</item>
+        <item name="colorControlActivated">#E8E8E8</item>
+    </style>
+</resources>

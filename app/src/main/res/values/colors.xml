@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#006DF0</color>
+    <color name="colorPrimaryDark">#006DF0</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorFondoLogin">#F3F3F3</color>
+    <color name="colorTurquesa">#08AE9E</color>
+    <color name="colorApp">#006DF0</color>
+    <color name="colorNegro">#000000</color>
+    <color name="colorItemSeleccionado">#DBEEFB</color>
+    <color name="colorBlanco">#FFFFFF</color>
+    <color name="colorFondoitemsPregunta">#FEFEFE</color>
+    <color name="colorFondoRecyclerView">#F7F7F7</color>
+    <color name="colorApp2">#F5B501</color>
+    <color name="colorFondeCheck">#50000000</color>
+</resources>

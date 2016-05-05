@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.nelson.testpsicologico.Activity_test">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorApp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:layout_weight="100"
+                    android:layout_height="match_parent">
+
+                    <!-- Imagen inicial-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="50"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/masculino"
+                            android:scaleType="centerCrop"
+                            android:layout_height="wrap_content" />
+
+                     </LinearLayout>
+
+                   <!-- TextView titulo -->
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                        android:layout_weight="25"
+                       android:gravity="center"
+                       android:layout_height="wrap_content">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Test Psiologico"
+                           android:id="@+id/txt_resultado"
+                           android:textColor="@color/colorBlanco"
+                           android:textSize="18sp"
+                           />
+
+
+
+                   </LinearLayout>
+
+                    <!-- Boton enviar-->
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_weight="35"
+                       android:gravity="center"
+                       android:layout_height="wrap_content">
+
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/enviar"
+                           />
+                       <Button
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:background="@color/colorApp"
+                            android:textColor="@color/colorBlanco"
+                           android:text="ENVIAR"
+                           android:id="@+id/btn_enviar"
+
+                           />
+
+                   </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+     <ProgressBar
+         android:layout_width="match_parent"
+         android:layout_height="5dp"
+         android:id="@+id/pb_barraProgreso"
+         android:progress="0"
+         android:progressDrawable="@drawable/progress_bar"
+         android:background="@color/colorFondoRecyclerView"
+         style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+         />
+
+     <android.support.v7.widget.RecyclerView
+
+         android:fitsSystemWindows="true"
+         android:id="@+id/recyclerTest"
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:background="@color/colorFondoRecyclerView"
+         />
+
+
+
+
+
+
+</LinearLayout>
